@@ -1,0 +1,6 @@
+print("This is for REGIONAL PARTIES ONLY.")
+OriginalLength = float(input("How many candidatures are there before the addition? "))
+WantedPercentage = float(input("What is the desired percentage for this party? "))
+NewValue = OriginalLength/(1-(WantedPercentage/100))
+Amount = round(NewValue-OriginalLength,0)
+print("The number to give is",Amount,".")
